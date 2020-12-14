@@ -15,6 +15,8 @@
 		73489C6F2585F388006521E0 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C6D2585F388006521E0 /* Live.storyboard */; };
 		73489C732585F3A8006521E0 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C712585F3A8006521E0 /* Follow.storyboard */; };
 		73489C772585F3CA006521E0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C752585F3CA006521E0 /* Profile.storyboard */; };
+		73E05C312586AB5D005D869C /* CMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C302586AB5D005D869C /* CMHomeViewController.swift */; };
+		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		73489C6E2585F388006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C722585F3A8006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C762585F3CA006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		73E05C302586AB5D005D869C /* CMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMHomeViewController.swift; sourceTree = "<group>"; };
+		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		73489C4C2585ED76006521E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				73E05C332586B0F2005D869C /* Tools */,
 				73489C4D2585ED76006521E0 /* Home */,
 				73489C512585ED76006521E0 /* Follow */,
 				73489C552585ED76006521E0 /* Profile */,
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				73489C692585F35F006521E0 /* Home.storyboard */,
+				73E05C302586AB5D005D869C /* CMHomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +247,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		73E05C332586B0F2005D869C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				73E05C342586B113005D869C /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		73E05C342586B113005D869C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
+				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
+				73E05C312586AB5D005D869C /* CMHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
