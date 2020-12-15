@@ -15,8 +15,10 @@
 		73489C6F2585F388006521E0 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C6D2585F388006521E0 /* Live.storyboard */; };
 		73489C732585F3A8006521E0 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C712585F3A8006521E0 /* Follow.storyboard */; };
 		73489C772585F3CA006521E0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C752585F3CA006521E0 /* Profile.storyboard */; };
-		73E05C312586AB5D005D869C /* CMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C302586AB5D005D869C /* CMHomeViewController.swift */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
+		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
+		73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E72587A7D4006A2E8C /* PageTitleView.swift */; };
+		73E632EB2587AA84006A2E8C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632EA2587AA84006A2E8C /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,10 @@
 		73489C6E2585F388006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C722585F3A8006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C762585F3CA006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
-		73E05C302586AB5D005D869C /* CMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMHomeViewController.swift; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73E632E72587A7D4006A2E8C /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		73E632EA2587AA84006A2E8C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				73489C692585F35F006521E0 /* Home.storyboard */,
-				73E05C302586AB5D005D869C /* CMHomeViewController.swift */,
+				73E632E32587A757006A2E8C /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +247,7 @@
 		73489C602585ED76006521E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73E632E72587A7D4006A2E8C /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				73E05C342586B113005D869C /* Extensions */,
+				73E632EA2587AA84006A2E8C /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -289,7 +295,7 @@
 		73489C2A2585EBCA006521E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CM;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
@@ -338,9 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
-				73E05C312586AB5D005D869C /* CMHomeViewController.swift in Sources */,
+				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
+				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
