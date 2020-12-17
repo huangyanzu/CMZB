@@ -7,11 +7,23 @@
 
 import UIKit
 
+protocol PageTitleViewDelegate : class   {
+    
+    func pageTitleView(titleView:PageTitleView , selectedIndex index :Int)
+    
+    
+}
+
+
+
+
 private let kScrollLineH : CGFloat = 5
 
 class PageTitleView: UIView {
 
     private var titles: [String]
+    
+    weak var delegate : PageTitleViewDelegate?
     
     private lazy var  scrollView:UIScrollView = {
        
@@ -40,7 +52,7 @@ class PageTitleView: UIView {
     
     private lazy var titleLabels : [UILabel] = [UILabel]()
     
-    
+    private var currentIndex:Int = 0
     
     init(frame:CGRect , titles : [String]) {
         
@@ -108,8 +120,18 @@ extension PageTitleView{
             titleLabels.append(label)
             
             
+            label.isUserInteractionEnabled = true
+            
+            let tapGes = UITapGestureRecognizer(target: self, action: #selector(titleLabelClick(tapGes:)))
+            
+            label.addGestureRecognizer(tapGes)
+            
+            
         }
+        
+        
     }
+    
     
     private func setupBottomLineAndScrollLine(){
        
@@ -136,5 +158,34 @@ extension PageTitleView{
          
         
     }
+    
+}
+
+extension PageTitleView{
+    
+    @objc func titleLabelClick(tapGes:UITapGestureRecognizer){
+        
+        guard  let currentLabel = tapGes.view as? UILabel else{ return }
+        
+        let oldLabel = titleLabels[currentIndex]
+        
+        currentLabel.textColor = UIColor.orange
+        
+        oldLabel.textColor = UIColor.darkGray
+        
+        currentIndex = currentLabel.tag
+        
+        let scrollLineX = CGFloat(currentLabel.tag) * scrollLine.frame.width
+        
+        UIView.animate(withDuration: 0.15) {
+            self.scrollLine.frame.origin.x = scrollLineX
+        }
+        
+        delegate?.pageTitleView(titleView: self, selectedIndex: currentIndex)
+        
+        
+    }
+    
+    
     
 }
