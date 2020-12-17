@@ -24,6 +24,30 @@ class HomeViewController: UIViewController {
         return titleView
     }()
     
+    private lazy var pageContentView:PageComtentView = {
+
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+
+        var childVCs = [UIViewController]()
+
+        for _ in 0..<4{
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)) )
+            
+            childVCs.append(vc)
+            
+        }
+
+
+        let contentView = PageComtentView(frame: contentFrame, childVcs: childVCs, parentViewController: self)
+
+        return contentView
+
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,7 +75,9 @@ extension HomeViewController{
      
     view.addSubview(pageTitleView)
      
+    view.addSubview(pageContentView)
     
+    pageContentView.backgroundColor = UIColor.red 
     
     }
     

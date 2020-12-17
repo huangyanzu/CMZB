@@ -15,10 +15,12 @@
 		73489C6F2585F388006521E0 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C6D2585F388006521E0 /* Live.storyboard */; };
 		73489C732585F3A8006521E0 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C712585F3A8006521E0 /* Follow.storyboard */; };
 		73489C772585F3CA006521E0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C752585F3CA006521E0 /* Profile.storyboard */; };
+		7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373E02D258A093800B31942 /* UIColor+Extension.swift */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
 		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
 		73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E72587A7D4006A2E8C /* PageTitleView.swift */; };
 		73E632EB2587AA84006A2E8C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632EA2587AA84006A2E8C /* Common.swift */; };
+		73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8AC8D25886D00001728AD /* PageComtentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +34,12 @@
 		73489C6E2585F388006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C722585F3A8006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		73489C762585F3CA006521E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CM/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		7373E02D258A093800B31942 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73E632E72587A7D4006A2E8C /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		73E632EA2587AA84006A2E8C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		73E8AC8D25886D00001728AD /* PageComtentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageComtentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				73E632E72587A7D4006A2E8C /* PageTitleView.swift */,
+				73E8AC8D25886D00001728AD /* PageComtentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */,
+				7373E02D258A093800B31942 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */,
 				73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
+				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
