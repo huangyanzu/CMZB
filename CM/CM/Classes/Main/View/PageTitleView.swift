@@ -216,7 +216,7 @@ extension PageTitleView {
         
         currentIndex = targetIndex
         
-       
+        
     }
     
     

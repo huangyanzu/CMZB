@@ -20,6 +20,8 @@
 		73531C53258CA236007BCD8F /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73531C51258CA236007BCD8F /* CollectionHeaderView.xib */; };
 		73531C57258CA75E007BCD8F /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73531C55258CA75E007BCD8F /* CollectionNormalCell.swift */; };
 		73531C58258CA75E007BCD8F /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73531C56258CA75E007BCD8F /* CollectionNormalCell.xib */; };
+		73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73531C5A258CAC91007BCD8F /* CollectionPrettyCell.swift */; };
+		73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */; };
 		7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373E02D258A093800B31942 /* UIColor+Extension.swift */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
 		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
@@ -44,6 +46,8 @@
 		73531C51258CA236007BCD8F /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		73531C55258CA75E007BCD8F /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		73531C56258CA75E007BCD8F /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		73531C5A258CAC91007BCD8F /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		7373E02D258A093800B31942 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				73E8AC8D25886D00001728AD /* PageComtentView.swift */,
 				73531C55258CA75E007BCD8F /* CollectionNormalCell.swift */,
 				73531C56258CA75E007BCD8F /* CollectionNormalCell.xib */,
+				73531C5A258CAC91007BCD8F /* CollectionPrettyCell.swift */,
+				73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				73489C3F2585EBCB006521E0 /* Assets.xcassets in Resources */,
 				73489C6F2585F388006521E0 /* Live.storyboard in Resources */,
 				73489C6B2585F35F006521E0 /* Home.storyboard in Resources */,
+				73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */,
 				73489C772585F3CA006521E0 /* Profile.storyboard in Resources */,
 				73489C732585F3A8006521E0 /* Follow.storyboard in Resources */,
 			);
@@ -372,6 +379,7 @@
 				73531C4E258C5CFA007BCD8F /* RecommendViewController.swift in Sources */,
 				73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */,
 				73531C57258CA75E007BCD8F /* CollectionNormalCell.swift in Sources */,
+				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
