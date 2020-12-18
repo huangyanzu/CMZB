@@ -214,7 +214,9 @@ extension PageTitleView {
         
         targetLabel.textColor = UIColor(r: kNormalColor.0 + colorDelta.0 * progress, g: kNormalColor.1 + colorDelta.1 * progress, b: kNormalColor.2 + colorDelta.2 * progress)
         
-        currentIndex = targetIndex 
+        currentIndex = targetIndex
+        
+       
     }
     
     

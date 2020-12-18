@@ -31,13 +31,16 @@ class RecommendViewController: UIViewController {
         
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         
-        collectionView.backgroundColor = UIColor.red
+        collectionView.backgroundColor = UIColor.white
         
         collectionView.dataSource = self
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNornalCellID)
+       
         
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNornalCellID)
+        
+        
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         return collectionView
     }()
@@ -81,7 +84,7 @@ extension RecommendViewController:UICollectionViewDataSource{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath)
         
-        cell.backgroundColor = UIColor.darkGray
+      
         
         
         return cell
@@ -93,7 +96,7 @@ extension RecommendViewController:UICollectionViewDataSource{
         
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
         
-        headerView.backgroundColor = UIColor.green
+       
         
         return headerView
         
