@@ -28,13 +28,14 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContentView:PageComtentView = { [weak self] in
 
-        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH 
 
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
 
         var childVCs = [UIViewController]()
+        childVCs.append(RecommendViewController())
 
-        for _ in 0..<4{
+        for _ in 0..<3{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)) )
             
@@ -45,6 +46,7 @@ class HomeViewController: UIViewController {
 
         let contentView = PageComtentView(frame: contentFrame, childVcs: childVCs, parentViewController: self)
 
+        contentView.delegate = self
         return contentView
 
     }()
@@ -116,6 +118,16 @@ extension HomeViewController : PageTitleViewDelegate{
     
     func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
         pageContentView.setCurrentIndex(currentIndex: index)
+    }
+    
+}
+
+extension HomeViewController : PageComtentViewDelegate{
+    
+    func pageComtentView(contentView: PageComtentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+       
+        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        
     }
     
 }

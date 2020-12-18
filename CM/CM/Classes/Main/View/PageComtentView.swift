@@ -7,13 +7,22 @@
 
 import UIKit
 
+protocol PageComtentViewDelegate : class {
+    
+    func pageComtentView(contentView:PageComtentView,progress:CGFloat ,sourceIndex:Int,targetIndex:Int)
+}
+
 private let contentCellId = "contentCellId"
+
 
 class PageComtentView: UIView {
 
     private var  childVcs:[UIViewController]
     
     private  weak var parentViewController:UIViewController?
+    
+    weak var delegate : PageComtentViewDelegate?
+    private var isForbidScrollDelegate : Bool = false
     
     private lazy var collectionView:UICollectionView = { [weak self ] in
         
@@ -35,12 +44,16 @@ class PageComtentView: UIView {
         
         collectionView.dataSource = self
         
+        collectionView.delegate = self
+        
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: contentCellId)
         
         return collectionView
         
     }()
     
+    
+    private var startOffsetX:CGFloat = 0
     
     init(frame:CGRect,childVcs:[UIViewController],parentViewController:UIViewController?){
         
@@ -109,12 +122,86 @@ extension PageComtentView : UICollectionViewDataSource{
 
 }
 
+extension PageComtentView:UICollectionViewDelegate{
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+        isForbidScrollDelegate = false
+        
+       startOffsetX = scrollView.contentOffset.x
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if isForbidScrollDelegate {return}
+        
+        var progress : CGFloat = 0
+        
+        var sourceIndex :Int = 0
+        
+        var targetIndex :Int = 0
+        
+        let currentOffsetX = scrollView.contentOffset.x
+        
+        let scrollViewW = scrollView.bounds.width
+        
+        if currentOffsetX > startOffsetX {//左滑
+            
+            progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW)
+            
+            sourceIndex = Int(currentOffsetX / scrollViewW)
+            
+            targetIndex = sourceIndex + 1
+            if targetIndex >= childVcs.count - 1 {
+                targetIndex = childVcs.count - 1
+            }
+            
+            if currentOffsetX - startOffsetX == scrollViewW{
+                progress = 1
+                targetIndex = sourceIndex
+            }
+            
+        }else{//右滑
+            
+            progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW))
+            
+            targetIndex = Int(currentOffsetX / scrollViewW)
+            
+            sourceIndex = targetIndex + 1
+            
+            if sourceIndex >= childVcs.count{
+                sourceIndex = childVcs.count - 1
+            }
+            
+        }
+        
+       
+        delegate?.pageComtentView(contentView: self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+
 extension PageComtentView {
+    
+    
+    
     func setCurrentIndex(currentIndex : Int) {
+        
+        isForbidScrollDelegate = true
         
         let offsetX = CGFloat(currentIndex) * collectionView.frame.width
         
         collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+        
+        
         
         
         
