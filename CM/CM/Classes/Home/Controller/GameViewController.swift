@@ -16,17 +16,7 @@ class GameViewController: UIViewController {
         view.backgroundColor = UIColor.white
        
         
-        AF.request("http://httpbin.org/get", method: .get).responseJSON { (json) in
-            
-            guard let result = json.value  else{
-                
-                print(json.error)
-                return
-            }
-            
-            print(result)
-        }
-        
+       
     }
     
 

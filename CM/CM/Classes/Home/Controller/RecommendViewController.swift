@@ -20,6 +20,8 @@ private let kHeaderViewID = "kHeaderViewID"
 private let kNornalCellID = "kNornalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 
+
+
 class RecommendViewController: UIViewController {
     
     private lazy var collectionView :UICollectionView = { [weak self] in
@@ -51,17 +53,34 @@ class RecommendViewController: UIViewController {
         
         return collectionView
     }()
+    
+    private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
         
-       
+       loadData()
     }
     
 
 }
+
+extension RecommendViewController{
+    
+    private func loadData(){
+        
+        recommentVM.requestData()
+        
+        
+    }
+    
+    
+    
+}
+
+
 
 extension RecommendViewController{
     
