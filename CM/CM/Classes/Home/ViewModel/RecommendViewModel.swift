@@ -28,31 +28,16 @@ extension RecommendViewModel {
         NetWorkTool.sharedInstance.request(method: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit":"4","offset":"0","time":NSDate.getCurrentTime()]) { (result) in
            
             guard  let resultDict = result as? [String : Any],
-                   let dataArray = resultDict["data"] as? [[String:Any]] else{
-                
-                
+                   let dataArray = resultDict["data"] as? [[String:Any]],
+                   let array = NSArray.yy_modelArray(with: AnchorGroup.self, json: dataArray) as? [AnchorGroup] else{
                 
                 return
             }
             
+            self.anchorGroups = array
+        
             
-           
             
-            
-            for dict in dataArray{
-
-                let group = AnchorGroup(dict: dict)
-
-                self.anchorGroups.append(group)
-            }
-
-
-            for group in self.anchorGroups{
-                
-                for anchor in group.anchors {
-                    print(anchor.nickname)
-                }
-            }
 
         }
         

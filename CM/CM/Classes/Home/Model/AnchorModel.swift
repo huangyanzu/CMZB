@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YYModel
 
 class AnchorModel: NSObject {
 
@@ -22,14 +23,19 @@ class AnchorModel: NSObject {
     @objc var online :Int = 0
     
     
-    init(dict:[String : Any]) {
-        super.init()
+    override var description: String{
         
-        setValuesForKeys(dict)
+        return yy_modelDescription()
     }
     
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
-    }
+//    init(dict:[String : Any]) {
+//        super.init()
+//
+//        setValuesForKeys(dict)
+//    }
+//
+//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+//
+//    }
     
 }
