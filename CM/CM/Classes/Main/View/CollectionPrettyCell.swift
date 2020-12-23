@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CollectionPrettyCell: UICollectionViewCell {
 
@@ -40,9 +41,15 @@ class CollectionPrettyCell: UICollectionViewCell {
             
             cityBtn.setTitle(anchor.anchor_city, for: .normal)
             
+            guard let url = anchor.vertical_src,
+                  let iconURL = URL(string: url) else {
+                iconImageView.image = UIImage(named: "live_cell_default_phone")
+                
+                //imageView.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "placeholder.png"))
+                return
+            }
             
-            
-            
+            iconImageView.sd_setImage(with: iconURL, placeholderImage: UIImage(named: "live_cell_default_phone"))
             
         }
     }

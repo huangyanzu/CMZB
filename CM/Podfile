@@ -7,6 +7,7 @@ target 'CM' do
 
   pod 'Alamofire', '~> 5.2'
   pod 'YYModel'
+  pod 'SDWebImage', '~> 5.0'
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|

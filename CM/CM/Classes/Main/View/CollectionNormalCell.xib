@@ -30,7 +30,7 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-xW-xHC">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-xW-xHC">
                         <rect key="frame" x="0.0" y="0.0" width="204" height="134.5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -69,6 +69,12 @@
                 <constraint firstItem="p2g-Fp-fP1" firstAttribute="bottom" secondItem="6cq-xW-xHC" secondAttribute="bottom" constant="-5" id="mCd-PQ-6aC"/>
             </constraints>
             <size key="customSize" width="204" height="163"/>
+            <connections>
+                <outlet property="iconImageView" destination="6cq-xW-xHC" id="Fic-nb-OnM"/>
+                <outlet property="nickNameLabel" destination="VCo-d5-KIV" id="LDU-9R-zd3"/>
+                <outlet property="onlineBtn" destination="p2g-Fp-fP1" id="x06-Eh-vxC"/>
+                <outlet property="roomNameLabel" destination="uxC-GB-1j8" id="HgI-Ii-aFJ"/>
+            </connections>
             <point key="canvasLocation" x="173.91304347826087" y="65.959821428571431"/>
         </collectionViewCell>
     </objects>
