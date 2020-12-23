@@ -11,6 +11,8 @@ class CollectionNormalCell: CollectionBaseCell {
     
    @IBOutlet weak var roomNameLabel: UILabel!
     
+  
+    
    override var anchor :AnchorModel?{
        didSet{
             super.anchor = anchor

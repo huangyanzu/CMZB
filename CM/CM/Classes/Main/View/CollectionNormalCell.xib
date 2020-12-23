@@ -71,9 +71,9 @@
             <size key="customSize" width="204" height="163"/>
             <connections>
                 <outlet property="iconImageView" destination="6cq-xW-xHC" id="Fic-nb-OnM"/>
-                <outlet property="nickNameLabel" destination="VCo-d5-KIV" id="LDU-9R-zd3"/>
+                <outlet property="nickNameLabel" destination="uxC-GB-1j8" id="myT-9i-7uF"/>
                 <outlet property="onlineBtn" destination="p2g-Fp-fP1" id="x06-Eh-vxC"/>
-                <outlet property="roomNameLabel" destination="uxC-GB-1j8" id="HgI-Ii-aFJ"/>
+                <outlet property="roomNameLabel" destination="VCo-d5-KIV" id="qnT-aW-XUj"/>
             </connections>
             <point key="canvasLocation" x="173.91304347826087" y="65.959821428571431"/>
         </collectionViewCell>
