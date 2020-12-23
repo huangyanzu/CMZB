@@ -29,6 +29,8 @@
 		7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373E02D258A093800B31942 /* UIColor+Extension.swift */; };
 		73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFA230259192A9000FA39D /* AnchorGroup.swift */; };
 		73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC1352259340380028692B /* CollectionBaseCell.swift */; };
+		73DC1356259370460028692B /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC1355259370460028692B /* RecommendCycleView.swift */; };
+		73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DC13582593706E0028692B /* RecommendCycleView.xib */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
 		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
 		73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E72587A7D4006A2E8C /* PageTitleView.swift */; };
@@ -64,6 +66,8 @@
 		7373E02D258A093800B31942 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		73AFA230259192A9000FA39D /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		73DC1352259340380028692B /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		73DC1355259370460028692B /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		73DC13582593706E0028692B /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73E632E72587A7D4006A2E8C /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 			children = (
 				73531C50258CA236007BCD8F /* CollectionHeaderView.swift */,
 				73531C51258CA236007BCD8F /* CollectionHeaderView.xib */,
+				73DC1355259370460028692B /* RecommendCycleView.swift */,
+				73DC13582593706E0028692B /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				73489C3F2585EBCB006521E0 /* Assets.xcassets in Resources */,
 				73489C6F2585F388006521E0 /* Live.storyboard in Resources */,
 				73489C6B2585F35F006521E0 /* Home.storyboard in Resources */,
+				73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */,
 				73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */,
 				73489C772585F3CA006521E0 /* Profile.storyboard in Resources */,
 				73489C732585F3A8006521E0 /* Follow.storyboard in Resources */,
@@ -498,6 +505,7 @@
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
+				73DC1356259370460028692B /* RecommendCycleView.swift in Sources */,
 				73E6D9002590558D000E9856 /* RecommendViewModel.swift in Sources */,
 				73034BCE2591DC7C00434797 /* AnchorModel.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,

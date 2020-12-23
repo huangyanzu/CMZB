@@ -13,6 +13,9 @@ private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 
+private let kCycleViewH = kScreenW * 3 / 8
+
+
 private let kHeaderViewH :CGFloat = 50
 private let kHeaderViewID = "kHeaderViewID"
 
@@ -55,6 +58,14 @@ class RecommendViewController: UIViewController {
     }()
     
     private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
+    
+    private lazy var cycleView:RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        
+        return cycleView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +105,10 @@ extension RecommendViewController{
     private func setupUI(){
        
         view.addSubview(collectionView)
+        
+        collectionView.addSubview(cycleView)
+        
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
         
     }
     

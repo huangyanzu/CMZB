@@ -75,7 +75,7 @@
                 <outlet property="onlineBtn" destination="p2g-Fp-fP1" id="x06-Eh-vxC"/>
                 <outlet property="roomNameLabel" destination="VCo-d5-KIV" id="qnT-aW-XUj"/>
             </connections>
-            <point key="canvasLocation" x="173.91304347826087" y="65.959821428571431"/>
+            <point key="canvasLocation" x="-207" y="60"/>
         </collectionViewCell>
     </objects>
     <resources>
