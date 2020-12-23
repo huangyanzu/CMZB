@@ -120,24 +120,22 @@ extension RecommendViewController:UICollectionViewDataSource{
         
         let anchor = group.room_list?[indexPath.item]
         
+        var cell : CollectionBaseCell!
+        
         if indexPath.section == 1 {
             
-          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
+           cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
             
-            cell.anchor = anchor
-            
-            return cell
         }else{
             
-          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath) as! CollectionNormalCell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath) as! CollectionNormalCell
             
-            cell.anchor = anchor
-            
-            return cell
         }
         
+        cell.anchor = anchor
         
-      
+        
+        return cell
         
         
        
