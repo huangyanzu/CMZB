@@ -22,6 +22,8 @@ class AnchorModel: NSObject {
     
     @objc var online :Int = 0
     
+    @objc var anchor_city : String? 
+    
     
     override var description: String{
         

@@ -71,10 +71,17 @@ extension RecommendViewController{
     
     private func loadData(){
         
-        recommentVM.requestData()
+        recommentVM.requestData {
+            
+            self.collectionView.reloadData()
+        }
+            
+            
+            
+        }
         
         
-    }
+   
     
     
     
@@ -96,40 +103,56 @@ extension RecommendViewController{
 extension RecommendViewController:UICollectionViewDataSource{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return  recommentVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        
+        let group = recommentVM.anchorGroups[section]
+        
+        
+        return group.room_list?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        var cell : UICollectionViewCell!
+        let group = recommentVM.anchorGroups[indexPath.section]
+        
+        let anchor = group.room_list?[indexPath.item]
         
         if indexPath.section == 1 {
             
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
+            
+            cell.anchor = anchor
+            
+            return cell
         }else{
             
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath)
+          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath) as! CollectionNormalCell
+            
+            cell.anchor = anchor
+            
+            return cell
         }
         
         
       
         
         
-        return cell
+       
     }
     
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        
+        headerView.group = recommentVM.anchorGroups[indexPath.section]
+        
+        
+        
         
        
         
