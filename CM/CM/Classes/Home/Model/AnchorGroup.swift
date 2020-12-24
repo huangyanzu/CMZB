@@ -32,6 +32,8 @@ class AnchorGroup: NSObject {
     
     @objc var icon_name : String? = "home_header_normal"
     
+    @objc var icon_url : String?
+    
     
     override init() {
         

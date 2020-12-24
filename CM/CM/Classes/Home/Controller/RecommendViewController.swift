@@ -15,6 +15,8 @@ private let kPrettyItemH = kItemW * 4 / 3
 
 private let kCycleViewH = kScreenW * 3 / 8
 
+private let kGameViewH : CGFloat = 90
+
 
 private let kHeaderViewH :CGFloat = 50
 private let kHeaderViewID = "kHeaderViewID"
@@ -59,15 +61,26 @@ class RecommendViewController: UIViewController {
     
     private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
     
-    
-    
+
     private lazy var cycleView:RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
         
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW , height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH - kGameViewH, width: kScreenW , height: kCycleViewH)
         
         return cycleView
     }()
+    
+    private lazy var gameView :RecommendGameView = {
+        
+        let gameView = RecommendGameView.recommendGameView()
+        
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        
+        
+        return gameView
+        
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +103,9 @@ extension RecommendViewController{
         recommentVM.requestData {
             
             self.collectionView.reloadData()
+            
+            self.gameView.groups = self.recommentVM.anchorGroups
+            
         }
             
             
@@ -120,7 +136,9 @@ extension RecommendViewController{
         
         collectionView.addSubview(cycleView)
         
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        collectionView.addSubview(gameView)
+        
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH , left: 0, bottom: 0, right: 0)
         
     }
     

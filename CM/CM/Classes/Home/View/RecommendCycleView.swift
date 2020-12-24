@@ -126,7 +126,7 @@ extension RecommendCycleView {
 
     private func addCycleTimer(){
         
-         cycleTimer = Timer(timeInterval: 3.0, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
+         cycleTimer = Timer(timeInterval: 4.0, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
         
         guard let cTimer = cycleTimer else{ return }
         
