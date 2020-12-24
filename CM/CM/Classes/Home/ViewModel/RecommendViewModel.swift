@@ -14,6 +14,10 @@ class RecommendViewModel {
     private lazy var hotGroup : [AnchorGroup] = [AnchorGroup]()
     
     private lazy var prettyGroup : [AnchorGroup] = [AnchorGroup]()
+    
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
+    
+    
 }
 
 extension RecommendViewModel {
@@ -108,6 +112,28 @@ extension RecommendViewModel {
             self.anchorGroups.insert(contentsOf: self.hotGroup, at: 0)
             
             completion()
+        }
+        
+        
+    }
+    
+    func requestCycleData(completion:@escaping()->()){
+        
+        NetWorkTool.sharedInstance.request(method: .GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "V6.380"]) { (result) in
+            
+            guard  let resultDict = result as? [String : Any] ,
+                   let dataArray = resultDict["data"] as? [[String : Any]],
+                   let array = NSArray.yy_modelArray(with: CycleModel.self, json: dataArray) as? [CycleModel] else
+            {
+                 return
+                
+            }
+            
+            self.cycleModels.append(contentsOf: array)
+            
+            completion()
+            
+            
         }
         
         

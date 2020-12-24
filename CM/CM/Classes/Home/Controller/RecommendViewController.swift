@@ -59,10 +59,12 @@ class RecommendViewController: UIViewController {
     
     private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
     
+    
+    
     private lazy var cycleView:RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
         
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW , height: kCycleViewH)
         
         return cycleView
     }()
@@ -82,12 +84,22 @@ extension RecommendViewController{
     
     private func loadData(){
         
+        
+        
+        
         recommentVM.requestData {
             
             self.collectionView.reloadData()
         }
             
             
+        recommentVM.requestCycleData {
+          
+            self.cycleView.cycleModels = self.recommentVM.cycleModels
+            
+        }
+        
+        
             
         }
         
