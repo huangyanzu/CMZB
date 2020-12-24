@@ -27,9 +27,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faa-On-haf">
-                        <rect key="frame" x="15.5" y="15" width="49" height="44"/>
+                        <rect key="frame" x="20" y="15" width="40" height="39"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="faa-On-haf" secondAttribute="height" multiplier="10:9" id="DUy-DW-dUR"/>
+                            <constraint firstAttribute="width" secondItem="faa-On-haf" secondAttribute="height" multiplier="40:39" id="EI7-o7-kd6"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -37,10 +37,10 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Nkz-kH-5Vw" secondAttribute="bottom" constant="10" id="8kv-We-5cr"/>
-                <constraint firstItem="faa-On-haf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BhZ-b0-RwR"/>
-                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="top" secondItem="faa-On-haf" secondAttribute="bottom" constant="5" id="S4N-28-VLt"/>
+                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="top" secondItem="faa-On-haf" secondAttribute="bottom" constant="10" id="9fS-dj-478"/>
+                <constraint firstItem="faa-On-haf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HiR-tH-6e5"/>
                 <constraint firstItem="Nkz-kH-5Vw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TP3-gq-Kkc"/>
-                <constraint firstItem="faa-On-haf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="qXO-RH-lsg"/>
+                <constraint firstItem="faa-On-haf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Ti2-nZ-R9m"/>
             </constraints>
             <size key="customSize" width="153" height="142"/>
             <connections>

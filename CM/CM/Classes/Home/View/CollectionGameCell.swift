@@ -25,11 +25,18 @@ class CollectionGameCell: UICollectionViewCell {
           
             
             iconImageView.sd_setImage(with: iconURL, placeholderImage: UIImage(named: "home_more_btn"))
+          
             iconImageView.layer.cornerRadius = iconImageView.bounds.size.width * 0.5
             iconImageView.layer.masksToBounds = true 
-            
         }
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+       
+        
+    }
   
+    
 }
