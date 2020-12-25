@@ -15,6 +15,8 @@
 		7322E8102594743D000DDB82 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7322E80E2594743D000DDB82 /* CollectionGameCell.xib */; };
 		73316A7625957974003C5321 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73316A7525957974003C5321 /* GameViewModel.swift */; };
 		73316A7925958223003C5321 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73316A7825958223003C5321 /* GameModel.swift */; };
+		73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73316A7F25961AC4003C5321 /* AmuseViewController.swift */; };
+		73316A832596313B003C5321 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73316A822596313B003C5321 /* AmuseViewModel.swift */; };
 		73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73489C352585EBCA006521E0 /* AppDelegate.swift */; };
 		73489C3F2585EBCB006521E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73489C3E2585EBCB006521E0 /* Assets.xcassets */; };
 		73489C422585EBCB006521E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73489C402585EBCB006521E0 /* LaunchScreen.storyboard */; };
@@ -59,6 +61,8 @@
 		7322E80E2594743D000DDB82 /* CollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
 		73316A7525957974003C5321 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		73316A7825958223003C5321 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		73316A7F25961AC4003C5321 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		73316A822596313B003C5321 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		73489C322585EBCA006521E0 /* CM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73489C352585EBCA006521E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73489C3E2585EBCB006521E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 				73E632E32587A757006A2E8C /* HomeViewController.swift */,
 				73531C4D258C5CFA007BCD8F /* RecommendViewController.swift */,
 				7309FD5F258F08B2000C1A2F /* GameViewController.swift */,
+				73316A7F25961AC4003C5321 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 			children = (
 				73E6D8FF2590558D000E9856 /* RecommendViewModel.swift */,
 				73316A7525957974003C5321 /* GameViewModel.swift */,
+				73316A822596313B003C5321 /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -521,6 +527,7 @@
 			files = (
 				73531C52258CA236007BCD8F /* CollectionHeaderView.swift in Sources */,
 				7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */,
+				73316A832596313B003C5321 /* AmuseViewModel.swift in Sources */,
 				73531C4E258C5CFA007BCD8F /* RecommendViewController.swift in Sources */,
 				73316A7625957974003C5321 /* GameViewModel.swift in Sources */,
 				7309FD5D258F0867000C1A2F /* FollowViewController.swift in Sources */,
@@ -534,6 +541,7 @@
 				73E6D90725906A65000E9856 /* NSDate+Extension.swift in Sources */,
 				73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */,
 				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
+				73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
 				73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */,
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
