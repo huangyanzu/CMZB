@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="CM" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="CM" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -18,36 +18,43 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-kH-5Vw">
-                        <rect key="frame" x="23.5" y="64" width="33" height="16"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="16" id="S3a-0d-vOq"/>
-                        </constraints>
+                        <rect key="frame" x="23.5" y="62" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faa-On-haf">
-                        <rect key="frame" x="20" y="15" width="40" height="39"/>
+                        <rect key="frame" x="20" y="17" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="faa-On-haf" secondAttribute="height" multiplier="40:39" id="EI7-o7-kd6"/>
+                            <constraint firstAttribute="height" constant="40" id="Ida-yx-5D6"/>
+                            <constraint firstAttribute="width" constant="40" id="vNV-uk-TZA"/>
                         </constraints>
                     </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-TN-ldN">
+                        <rect key="frame" x="0.0" y="90" width="80" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DKA-W8-D3R"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Nkz-kH-5Vw" secondAttribute="bottom" constant="10" id="8kv-We-5cr"/>
-                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="top" secondItem="faa-On-haf" secondAttribute="bottom" constant="10" id="9fS-dj-478"/>
-                <constraint firstItem="faa-On-haf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HiR-tH-6e5"/>
-                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TP3-gq-Kkc"/>
-                <constraint firstItem="faa-On-haf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Ti2-nZ-R9m"/>
+                <constraint firstItem="faa-On-haf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="00P-FO-aqe"/>
+                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="top" secondItem="faa-On-haf" secondAttribute="bottom" constant="5" id="48W-Vv-rE6"/>
+                <constraint firstItem="QKB-TN-ldN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Adw-fe-eLo"/>
+                <constraint firstItem="Nkz-kH-5Vw" firstAttribute="centerX" secondItem="faa-On-haf" secondAttribute="centerX" id="SJt-iA-W9c"/>
+                <constraint firstItem="faa-On-haf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="TCk-t6-NXl"/>
+                <constraint firstAttribute="bottom" secondItem="QKB-TN-ldN" secondAttribute="bottom" constant="-1" id="cpq-zo-p2b"/>
+                <constraint firstAttribute="trailing" secondItem="QKB-TN-ldN" secondAttribute="trailing" id="fKE-mn-3LR"/>
             </constraints>
             <size key="customSize" width="153" height="142"/>
             <connections>
                 <outlet property="iconImageView" destination="faa-On-haf" id="txm-Nc-b3B"/>
                 <outlet property="titleLabel" destination="Nkz-kH-5Vw" id="ErZ-b4-oxu"/>
             </connections>
-            <point key="canvasLocation" x="261" y="-3"/>
+            <point key="canvasLocation" x="260.86956521739131" y="-3.3482142857142856"/>
         </collectionViewCell>
     </objects>
 </document>

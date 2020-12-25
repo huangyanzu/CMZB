@@ -16,6 +16,8 @@ private let kGameCellID = "kGameCellID"
 
 class GameViewController: UIViewController {
 
+   //private lazy var gameVm: GameViewModel = GameViewModel()
+    private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
     
     private lazy var collectionView:UICollectionView = { [weak self] in
         
@@ -33,6 +35,8 @@ class GameViewController: UIViewController {
         collectionView.register(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
         
         collectionView.dataSource = self
+        
+        collectionView.backgroundColor = UIColor.white 
         
         return collectionView
     }()
@@ -53,22 +57,47 @@ extension GameViewController {
     private func setupUI(){
         
         view.addSubview(collectionView)
+        
+        loadData()
+
     }
+    
+}
+
+extension GameViewController{
+    
+    private  func loadData(){
+        
+        recommentVM.requestData {
+            
+            self.collectionView.reloadData()
+            
+           
+            
+        }
+            
+    }
+    
     
 }
 
 
 
+
 extension GameViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 60
+        return recommentVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionGameCell
         
-        cell.backgroundColor = UIColor.randomColor()
+       
+        let gameModel = recommentVM.anchorGroups[indexPath.item]
+        
+        cell.group = gameModel 
+        
         
         return cell
         
