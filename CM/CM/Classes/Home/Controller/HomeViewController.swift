@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         childVCs.append(RecommendViewController())
         childVCs.append(GameViewController())
         childVCs.append(AmuseViewController())
-        childVCs.append(UIViewController())
+        childVCs.append(FunnyViewController())
        
 
 

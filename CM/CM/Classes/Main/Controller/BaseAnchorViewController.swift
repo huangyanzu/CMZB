@@ -98,16 +98,23 @@ extension BaseAnchorViewController{
 extension BaseAnchorViewController : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+      
         return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+       
         return baseVM.anchorGroups[section].room_list?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNornalCellID, for: indexPath ) as! CollectionNormalCell
+        
         
         cell.anchor = baseVM.anchorGroups[indexPath.section].room_list?[indexPath.item]
       

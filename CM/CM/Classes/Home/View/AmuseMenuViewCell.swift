@@ -33,7 +33,7 @@ class AmuseMenuViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.scrollDirection = .horizontal
+       
         let itemW = collectionView.bounds.width / 4
         
         let itemH = collectionView.bounds.height / 2

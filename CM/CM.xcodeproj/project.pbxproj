@@ -40,6 +40,8 @@
 		73DC0AA52596F58700EA627E /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DC0AA42596F58700EA627E /* AmuseMenuView.xib */; };
 		73DC0AA92597012300EA627E /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0AA72597012300EA627E /* AmuseMenuViewCell.swift */; };
 		73DC0AAA2597012300EA627E /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DC0AA82597012300EA627E /* AmuseMenuViewCell.xib */; };
+		73DC0AAD259718B900EA627E /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0AAC259718B900EA627E /* FunnyViewController.swift */; };
+		73DC0AB025971BCC00EA627E /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0AAF25971BCC00EA627E /* FunnyViewModel.swift */; };
 		73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC1352259340380028692B /* CollectionBaseCell.swift */; };
 		73DC1356259370460028692B /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC1355259370460028692B /* RecommendCycleView.swift */; };
 		73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DC13582593706E0028692B /* RecommendCycleView.xib */; };
@@ -94,6 +96,8 @@
 		73DC0AA42596F58700EA627E /* AmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		73DC0AA72597012300EA627E /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		73DC0AA82597012300EA627E /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		73DC0AAC259718B900EA627E /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		73DC0AAF25971BCC00EA627E /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		73DC1352259340380028692B /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		73DC1355259370460028692B /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		73DC13582593706E0028692B /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				73531C4D258C5CFA007BCD8F /* RecommendViewController.swift */,
 				7309FD5F258F08B2000C1A2F /* GameViewController.swift */,
 				73316A7F25961AC4003C5321 /* AmuseViewController.swift */,
+				73DC0AAC259718B900EA627E /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				73E6D8FF2590558D000E9856 /* RecommendViewModel.swift */,
 				73316A7525957974003C5321 /* GameViewModel.swift */,
 				73316A822596313B003C5321 /* AmuseViewModel.swift */,
+				73DC0AAF25971BCC00EA627E /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -573,6 +579,7 @@
 				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
 				73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
+				73DC0AAD259718B900EA627E /* FunnyViewController.swift in Sources */,
 				73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */,
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
@@ -585,6 +592,7 @@
 				73DC0AA92597012300EA627E /* AmuseMenuViewCell.swift in Sources */,
 				73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
+				73DC0AB025971BCC00EA627E /* FunnyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
