@@ -27,37 +27,9 @@ private let kPrettyCellID = "kPrettyCellID"
 
 
 
-class RecommendViewController: UIViewController {
+class RecommendViewController: BaseAnchorViewController {
     
-    private lazy var collectionView :UICollectionView = { [weak self] in
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
-        layout.minimumLineSpacing = 0 
-        layout.minimumInteritemSpacing = kItemMargin
-        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: kItemMargin, bottom: 0, right: kItemMargin)
-        
-        let collectionView = UICollectionView(frame: (self?.view.bounds)! , collectionViewLayout: layout)
-        
-        collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
-        
-        collectionView.backgroundColor = UIColor.white
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        
-       
-        
-        collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNornalCellID)
-        
-        collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
-        
-        
-        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
-        
-        return collectionView
-    }()
+   
     
     private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
     
@@ -81,23 +53,13 @@ class RecommendViewController: UIViewController {
         
     }()
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setupUI()
-        
-       loadData()
-    }
-    
-
 }
 
 extension RecommendViewController{
     
-    private func loadData(){
+    override func loadData(){
         
-        
+        baseVM = recommentVM
         
         
         recommentVM.requestData {
@@ -119,10 +81,6 @@ extension RecommendViewController{
             
         }
         
-        
-   
-    
-    
     
 }
 
@@ -130,9 +88,9 @@ extension RecommendViewController{
 
 extension RecommendViewController{
     
-    private func setupUI(){
+    override func setupUI(){
        
-        view.addSubview(collectionView)
+        super.setupUI()
         
         collectionView.addSubview(cycleView)
         
@@ -145,21 +103,11 @@ extension RecommendViewController{
     
 }
 
-extension RecommendViewController:UICollectionViewDataSource{
+extension RecommendViewController{
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return  recommentVM.anchorGroups.count
-    }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        let group = recommentVM.anchorGroups[section]
-        
-        
-        return group.room_list?.count ?? 0
-    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let group = recommentVM.anchorGroups[indexPath.section]
         
@@ -188,20 +136,7 @@ extension RecommendViewController:UICollectionViewDataSource{
     
     
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
-        
-        headerView.group = recommentVM.anchorGroups[indexPath.section]
-        
-        
-        
-        
-       
-        
-        return headerView
-        
-    }
+    
     
 }
 

@@ -7,9 +7,9 @@
 
 import Foundation
 
-class RecommendViewModel {
+class RecommendViewModel:BaseViewModel {
     
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    
     
     private lazy var hotGroup : [AnchorGroup] = [AnchorGroup]()
     
@@ -88,23 +88,30 @@ extension RecommendViewModel {
         
         //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1608528927
         
-        group.enter()
-        NetWorkTool.sharedInstance.request(method: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
-           
-            guard  let resultDict = result as? [String : Any],
-                   let dataArray = resultDict["data"] as? [[String:Any]],
-                   let array = NSArray.yy_modelArray(with: AnchorGroup.self, json: dataArray) as? [AnchorGroup] else{
-                
-                return
-            }
-            
-            self.anchorGroups = array
+//        NetWorkTool.sharedInstance.request(method: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
+//
+//            guard  let resultDict = result as? [String : Any],
+//                   let dataArray = resultDict["data"] as? [[String:Any]],
+//                   let array = NSArray.yy_modelArray(with: AnchorGroup.self, json: dataArray) as? [AnchorGroup] else{
+//
+//                return
+//            }
+//
+//            self.anchorGroups = array
+//
+//
+//
+//            group.leave()
+//
+//        }
         
+        group.enter()
+       
+        loadAnchorData(urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             
-            
-            group.leave()
-
+            group.leave() 
         }
+        
         
         group.notify(queue: DispatchQueue.main) {
             
