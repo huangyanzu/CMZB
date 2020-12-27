@@ -25,7 +25,9 @@ extension RecommendViewModel {
     func requestData(completion:@escaping()->()){
       
         let parameters = ["limit":"4","offset":"0","time":NSDate.getCurrentTime()]
-        // 1608797859
+        //
+        
+        
        
         let group = DispatchGroup()
         
@@ -86,7 +88,8 @@ extension RecommendViewModel {
         
         
         
-        //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1608528927
+        //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1609001298
+
         
 //        NetWorkTool.sharedInstance.request(method: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
 //
@@ -107,7 +110,7 @@ extension RecommendViewModel {
         
         group.enter()
        
-        loadAnchorData(urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
+        loadAnchorData(isGroupData:true, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             
             group.leave() 
         }
