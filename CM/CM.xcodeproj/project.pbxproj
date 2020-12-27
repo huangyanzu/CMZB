@@ -34,6 +34,8 @@
 		73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */; };
 		7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373E02D258A093800B31942 /* UIColor+Extension.swift */; };
 		73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFA230259192A9000FA39D /* AnchorGroup.swift */; };
+		73C892A92598B15D000A334E /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C892A82598B15D000A334E /* RoomShowViewController.swift */; };
+		73C892AC2598B18E000A334E /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C892AB2598B18E000A334E /* RoomNormalViewController.swift */; };
 		73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0A9A2596D20800EA627E /* BaseViewModel.swift */; };
 		73DC0A9F2596D4D900EA627E /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */; };
 		73DC0AA22596F56A00EA627E /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0AA12596F56A00EA627E /* AmuseMenuView.swift */; };
@@ -91,6 +93,8 @@
 		73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		7373E02D258A093800B31942 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		73AFA230259192A9000FA39D /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		73C892A82598B15D000A334E /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		73C892AB2598B18E000A334E /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
 		73DC0A9A2596D20800EA627E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
 		73DC0AA12596F56A00EA627E /* AmuseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		73489C4C2585ED76006521E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				73C892A42598B130000A334E /* Room */,
 				73E05C332586B0F2005D869C /* Tools */,
 				73489C4D2585ED76006521E0 /* Home */,
 				73489C512585ED76006521E0 /* Follow */,
@@ -383,6 +388,39 @@
 				73531C5A258CAC91007BCD8F /* CollectionPrettyCell.swift */,
 				73531C5B258CAC91007BCD8F /* CollectionPrettyCell.xib */,
 				73DC1352259340380028692B /* CollectionBaseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73C892A42598B130000A334E /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				73C892A52598B130000A334E /* Controller */,
+				73C892A62598B130000A334E /* Model */,
+				73C892A72598B130000A334E /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		73C892A52598B130000A334E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73C892A82598B15D000A334E /* RoomShowViewController.swift */,
+				73C892AB2598B18E000A334E /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73C892A62598B130000A334E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73C892A72598B130000A334E /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,9 +629,11 @@
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
 				73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */,
 				73DC1356259370460028692B /* RecommendCycleView.swift in Sources */,
+				73C892AC2598B18E000A334E /* RoomNormalViewController.swift in Sources */,
 				73E6D9002590558D000E9856 /* RecommendViewModel.swift in Sources */,
 				73034BCE2591DC7C00434797 /* AnchorModel.swift in Sources */,
 				73DC0AA92597012300EA627E /* AmuseMenuViewCell.swift in Sources */,
+				73C892A92598B15D000A334E /* RoomShowViewController.swift in Sources */,
 				73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
 				73DC0AB025971BCC00EA627E /* FunnyViewModel.swift in Sources */,

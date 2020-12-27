@@ -79,6 +79,10 @@ extension BaseAnchorViewController{
         
         view.addSubview(collectionView)
         
+        
+        
+       
+        
         super.setupUI()
         
     }
@@ -99,7 +103,7 @@ extension BaseAnchorViewController{
 
 
 
-extension BaseAnchorViewController : UICollectionViewDataSource,UICollectionViewDelegate{
+extension BaseAnchorViewController : UICollectionViewDataSource{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
@@ -139,6 +143,41 @@ extension BaseAnchorViewController : UICollectionViewDataSource,UICollectionView
         
     }
     
+    
+    
+}
+extension BaseAnchorViewController:UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let anchor = baseVM.anchorGroups[indexPath.section].room_list?[indexPath.item]
+        
+       
+        
+        anchor?.isVertical == 0 ? presentNormalRoom() : presentShowRoomVc()
+        
+        
+    }
+    
+    private func presentShowRoomVc(){
+        
+        let showRoomVc = RoomShowViewController()
+        
+        showRoomVc.modalPresentationStyle = .fullScreen
+        
+        present(showRoomVc, animated: true, completion: nil)
+        
+    }
+    
+    private func presentNormalRoom(){
+        
+        let normalRoomVC = RoomNormalViewController()
+        
+       
+        
+        navigationController?.pushViewController(normalRoomVC, animated: true)
+        
+    }
     
     
 }
