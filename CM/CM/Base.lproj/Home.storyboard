@@ -28,7 +28,7 @@
         <!--Home-->
         <scene sceneID="3g6-8P-NBN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bvv-qb-jIO" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bvv-qb-jIO" customClass="CustomNavigationController" customModule="CM" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="btn_home_normal" selectedImage="btn_home_selected" id="A2t-8P-Xeb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rx5-Dl-Gvm">

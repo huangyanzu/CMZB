@@ -36,6 +36,7 @@
 		73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFA230259192A9000FA39D /* AnchorGroup.swift */; };
 		73C892A92598B15D000A334E /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C892A82598B15D000A334E /* RoomShowViewController.swift */; };
 		73C892AC2598B18E000A334E /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C892AB2598B18E000A334E /* RoomNormalViewController.swift */; };
+		73C892AF2598B51E000A334E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C892AE2598B51E000A334E /* CustomNavigationController.swift */; };
 		73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0A9A2596D20800EA627E /* BaseViewModel.swift */; };
 		73DC0A9F2596D4D900EA627E /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */; };
 		73DC0AA22596F56A00EA627E /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC0AA12596F56A00EA627E /* AmuseMenuView.swift */; };
@@ -95,6 +96,7 @@
 		73AFA230259192A9000FA39D /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		73C892A82598B15D000A334E /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		73C892AB2598B18E000A334E /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		73C892AE2598B51E000A334E /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		73DC0A9A2596D20800EA627E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
 		73DC0AA12596F56A00EA627E /* AmuseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				73489C652585EEF5006521E0 /* Main.storyboard */,
 				73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */,
 				73F35A3C259844160016B5D9 /* BaseViewController.swift */,
+				73C892AE2598B51E000A334E /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				73C892A92598B15D000A334E /* RoomShowViewController.swift in Sources */,
 				73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
+				73C892AF2598B51E000A334E /* CustomNavigationController.swift in Sources */,
 				73DC0AB025971BCC00EA627E /* FunnyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
