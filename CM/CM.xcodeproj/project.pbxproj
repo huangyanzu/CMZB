@@ -57,6 +57,7 @@
 		73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8AC8D25886D00001728AD /* PageComtentView.swift */; };
 		73EDE4B025945E4C00F12893 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */; };
 		73EDE4B325945E5D00F12893 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EDE4B225945E5D00F12893 /* RecommendGameView.xib */; };
+		73F35A3D259844160016B5D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F35A3C259844160016B5D9 /* BaseViewController.swift */; };
 		F88794853DC1300BC0CD79C1 /* Pods_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DCBBECDA285E5F089899AB /* Pods_CM.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		73E8AC8D25886D00001728AD /* PageComtentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageComtentView.swift; sourceTree = "<group>"; };
 		73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		73EDE4B225945E5D00F12893 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		73F35A3C259844160016B5D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		94DCBBECDA285E5F089899AB /* Pods_CM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE281AFF65B0009BBBC41BF6 /* Pods-CM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.release.xcconfig"; path = "Target Support Files/Pods-CM/Pods-CM.release.xcconfig"; sourceTree = "<group>"; };
 		F044B325F641DA5E76AADC9E /* Pods-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.debug.xcconfig"; path = "Target Support Files/Pods-CM/Pods-CM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 			children = (
 				73489C652585EEF5006521E0 /* Main.storyboard */,
 				73DC0A9E2596D4D900EA627E /* BaseAnchorViewController.swift */,
+				73F35A3C259844160016B5D9 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				73316A832596313B003C5321 /* AmuseViewModel.swift in Sources */,
 				73531C4E258C5CFA007BCD8F /* RecommendViewController.swift in Sources */,
 				73316A7625957974003C5321 /* GameViewModel.swift in Sources */,
+				73F35A3D259844160016B5D9 /* BaseViewController.swift in Sources */,
 				7309FD5D258F0867000C1A2F /* FollowViewController.swift in Sources */,
 				73EDE4B025945E4C00F12893 /* RecommendGameView.swift in Sources */,
 				7309FD64258F0DD4000C1A2F /* NetWorkTool.swift in Sources */,

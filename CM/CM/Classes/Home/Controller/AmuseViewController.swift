@@ -60,6 +60,8 @@ extension AmuseViewController{
             
            // self.amuseMenuView.groups = self.amuseVM.anchorGroups
             
+            self.loadDataFinished()
+            
         }
         
     }

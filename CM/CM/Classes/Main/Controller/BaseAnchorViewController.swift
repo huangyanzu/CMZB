@@ -22,7 +22,7 @@ private let kNornalCellID = "kNornalCellID"
 private let kPrettyCellID =  "kPrettyCellID"
 
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
 
      var baseVM : BaseViewModel!
     
@@ -71,11 +71,15 @@ class BaseAnchorViewController: UIViewController {
 
 extension BaseAnchorViewController{
     
-    @objc func setupUI(){
+    @objc override func setupUI(){
+         
+        contentView = collectionView 
         
         view.backgroundColor = UIColor.white
         
         view.addSubview(collectionView)
+        
+        super.setupUI()
         
     }
     

@@ -40,6 +40,8 @@ extension FunnyViewController{
         
             self.collectionView.reloadData()
             
+            self.loadDataFinished()
+            
         }
         
         

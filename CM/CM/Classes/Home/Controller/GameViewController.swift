@@ -21,7 +21,7 @@ private let kGameViewH :CGFloat = 90
 
 
 
-class GameViewController: UIViewController {
+class GameViewController: BaseViewController {
 
    //private lazy var gameVm: GameViewModel = GameViewModel()
     private lazy var recommentVM  : RecommendViewModel = RecommendViewModel()
@@ -87,7 +87,9 @@ class GameViewController: UIViewController {
 
 }
 extension GameViewController {
-    private func setupUI(){
+    override func setupUI(){
+        
+        contentView = collectionView 
         
         view.addSubview(collectionView)
         
@@ -98,6 +100,8 @@ extension GameViewController {
         collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH , left: 0, bottom: 0, right: 0)
       
         collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        
+        super.setupUI()
     }
     
 }
@@ -111,6 +115,8 @@ extension GameViewController{
             self.collectionView.reloadData()
             
            self.gameView.groups = Array(self.recommentVM.anchorGroups[0..<6])
+            
+            self.loadDataFinished()
             
         }
             

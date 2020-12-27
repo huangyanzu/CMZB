@@ -68,6 +68,8 @@ extension RecommendViewController{
             
             self.gameView.groups = self.recommentVM.anchorGroups
             
+            self.loadDataFinished()
+            
         }
             
             
