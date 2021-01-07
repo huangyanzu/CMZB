@@ -51,6 +51,8 @@
 		73DC135C259387E00028692B /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC135B259387E00028692B /* CycleModel.swift */; };
 		73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC135E25938C7A0028692B /* CollectionCycleCell.swift */; };
 		73DC136125938C7A0028692B /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DC135F25938C7A0028692B /* CollectionCycleCell.xib */; };
+		73DEC2BE25A6F6D500B48647 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEC2BD25A6F6D500B48647 /* Emitterable.swift */; };
+		73DEC2EE25A7023F00B48647 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEC2ED25A7023F00B48647 /* NibLoadable.swift */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
 		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
 		73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E72587A7D4006A2E8C /* PageTitleView.swift */; };
@@ -61,6 +63,8 @@
 		73EDE4B025945E4C00F12893 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */; };
 		73EDE4B325945E5D00F12893 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EDE4B225945E5D00F12893 /* RecommendGameView.xib */; };
 		73F35A3D259844160016B5D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F35A3C259844160016B5D9 /* BaseViewController.swift */; };
+		73F606FD25A5B5140097741A /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F606FB25A5B5140097741A /* RoomViewController.xib */; };
+		73F606FE25A5B5140097741A /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F606FC25A5B5140097741A /* RoomViewController.swift */; };
 		F88794853DC1300BC0CD79C1 /* Pods_CM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DCBBECDA285E5F089899AB /* Pods_CM.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +115,8 @@
 		73DC135B259387E00028692B /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		73DC135E25938C7A0028692B /* CollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
 		73DC135F25938C7A0028692B /* CollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
+		73DEC2BD25A6F6D500B48647 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		73DEC2ED25A7023F00B48647 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73E632E72587A7D4006A2E8C /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 		73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		73EDE4B225945E5D00F12893 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		73F35A3C259844160016B5D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		73F606FB25A5B5140097741A /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		73F606FC25A5B5140097741A /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		94DCBBECDA285E5F089899AB /* Pods_CM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE281AFF65B0009BBBC41BF6 /* Pods-CM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.release.xcconfig"; path = "Target Support Files/Pods-CM/Pods-CM.release.xcconfig"; sourceTree = "<group>"; };
 		F044B325F641DA5E76AADC9E /* Pods-CM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CM.debug.xcconfig"; path = "Target Support Files/Pods-CM/Pods-CM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -408,6 +416,8 @@
 		73C892A52598B130000A334E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73F606FC25A5B5140097741A /* RoomViewController.swift */,
+				73F606FB25A5B5140097741A /* RoomViewController.xib */,
 				73C892A82598B15D000A334E /* RoomShowViewController.swift */,
 				73C892AB2598B18E000A334E /* RoomNormalViewController.swift */,
 			);
@@ -436,9 +446,19 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		73DEC2BC25A6F6C300B48647 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				73DEC2ED25A7023F00B48647 /* NibLoadable.swift */,
+				73DEC2BD25A6F6D500B48647 /* Emitterable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		73E05C332586B0F2005D869C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				73DEC2BC25A6F6C300B48647 /* Protocol */,
 				7309FD62258F0DB1000C1A2F /* NetWorkTools */,
 				73E05C342586B113005D869C /* Extensions */,
 				73E632EA2587AA84006A2E8C /* Common.swift */,
@@ -543,6 +563,7 @@
 				73489C3F2585EBCB006521E0 /* Assets.xcassets in Resources */,
 				73489C6F2585F388006521E0 /* Live.storyboard in Resources */,
 				73489C6B2585F35F006521E0 /* Home.storyboard in Resources */,
+				73F606FD25A5B5140097741A /* RoomViewController.xib in Resources */,
 				7322E8102594743D000DDB82 /* CollectionGameCell.xib in Resources */,
 				73DC0AA52596F58700EA627E /* AmuseMenuView.xib in Resources */,
 				73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */,
@@ -618,16 +639,19 @@
 				73531C57258CA75E007BCD8F /* CollectionNormalCell.swift in Sources */,
 				73DC0AA22596F56A00EA627E /* AmuseMenuView.swift in Sources */,
 				73DC0A9F2596D4D900EA627E /* BaseAnchorViewController.swift in Sources */,
+				73F606FE25A5B5140097741A /* RoomViewController.swift in Sources */,
 				73316A7925958223003C5321 /* GameModel.swift in Sources */,
 				73E6D90725906A65000E9856 /* NSDate+Extension.swift in Sources */,
 				73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */,
 				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
 				73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
+				73DEC2EE25A7023F00B48647 /* NibLoadable.swift in Sources */,
 				73DC0AAD259718B900EA627E /* FunnyViewController.swift in Sources */,
 				73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */,
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
+				73DEC2BE25A6F6D500B48647 /* Emitterable.swift in Sources */,
 				7322E80F2594743D000DDB82 /* CollectionGameCell.swift in Sources */,
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
 				73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */,

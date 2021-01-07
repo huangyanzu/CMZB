@@ -161,7 +161,7 @@ extension BaseAnchorViewController:UICollectionViewDelegate{
     
     private func presentShowRoomVc(){
         
-        let showRoomVc = RoomShowViewController()
+        let showRoomVc = RoomViewController()
         
         showRoomVc.modalPresentationStyle = .fullScreen
         
@@ -171,7 +171,7 @@ extension BaseAnchorViewController:UICollectionViewDelegate{
     
     private func presentNormalRoom(){
         
-        let normalRoomVC = RoomNormalViewController()
+        let normalRoomVC = RoomViewController()
         
        
         
