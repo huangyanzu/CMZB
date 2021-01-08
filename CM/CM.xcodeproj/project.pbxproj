@@ -62,6 +62,15 @@
 		73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8AC8D25886D00001728AD /* PageComtentView.swift */; };
 		73EDE4B025945E4C00F12893 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */; };
 		73EDE4B325945E5D00F12893 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EDE4B225945E5D00F12893 /* RecommendGameView.xib */; };
+		73EF730725A8563C0019B7C5 /* HYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730125A8563C0019B7C5 /* HYTitleView.swift */; };
+		73EF730825A8563C0019B7C5 /* HYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730225A8563C0019B7C5 /* HYTitleStyle.swift */; };
+		73EF730925A8563C0019B7C5 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730325A8563C0019B7C5 /* HYPageView.swift */; };
+		73EF730A25A8563C0019B7C5 /* HYPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730425A8563C0019B7C5 /* HYPageCollectionView.swift */; };
+		73EF730B25A8563C0019B7C5 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730525A8563C0019B7C5 /* HYContentView.swift */; };
+		73EF730C25A8563C0019B7C5 /* HYPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF730625A8563C0019B7C5 /* HYPageCollectionViewLayout.swift */; };
+		73EF731925A85A100019B7C5 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF731425A85A100019B7C5 /* ChatToolsView.swift */; };
+		73EF731C25A85A100019B7C5 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EF731725A85A100019B7C5 /* ChatToolsView.xib */; };
+		73EF732A25A8B9090019B7C5 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF732925A8B9090019B7C5 /* EmoticonView.swift */; };
 		73F35A3D259844160016B5D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F35A3C259844160016B5D9 /* BaseViewController.swift */; };
 		73F606FD25A5B5140097741A /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F606FB25A5B5140097741A /* RoomViewController.xib */; };
 		73F606FE25A5B5140097741A /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F606FC25A5B5140097741A /* RoomViewController.swift */; };
@@ -126,6 +135,15 @@
 		73E8AC8D25886D00001728AD /* PageComtentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageComtentView.swift; sourceTree = "<group>"; };
 		73EDE4AF25945E4C00F12893 /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		73EDE4B225945E5D00F12893 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		73EF730125A8563C0019B7C5 /* HYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleView.swift; sourceTree = "<group>"; };
+		73EF730225A8563C0019B7C5 /* HYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleStyle.swift; sourceTree = "<group>"; };
+		73EF730325A8563C0019B7C5 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
+		73EF730425A8563C0019B7C5 /* HYPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageCollectionView.swift; sourceTree = "<group>"; };
+		73EF730525A8563C0019B7C5 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
+		73EF730625A8563C0019B7C5 /* HYPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		73EF731425A85A100019B7C5 /* ChatToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		73EF731725A85A100019B7C5 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		73EF732925A8B9090019B7C5 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		73F35A3C259844160016B5D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		73F606FB25A5B5140097741A /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 		73F606FC25A5B5140097741A /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -392,6 +410,7 @@
 		73489C602585ED76006521E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73EF730025A8563C0019B7C5 /* HYPageView */,
 				73E632E72587A7D4006A2E8C /* PageTitleView.swift */,
 				73E8AC8D25886D00001728AD /* PageComtentView.swift */,
 				73531C55258CA75E007BCD8F /* CollectionNormalCell.swift */,
@@ -434,6 +453,7 @@
 		73C892A72598B130000A334E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73EF731225A85A100019B7C5 /* ChatView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -485,6 +505,29 @@
 				73DC0AAF25971BCC00EA627E /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		73EF730025A8563C0019B7C5 /* HYPageView */ = {
+			isa = PBXGroup;
+			children = (
+				73EF730125A8563C0019B7C5 /* HYTitleView.swift */,
+				73EF730225A8563C0019B7C5 /* HYTitleStyle.swift */,
+				73EF730325A8563C0019B7C5 /* HYPageView.swift */,
+				73EF730425A8563C0019B7C5 /* HYPageCollectionView.swift */,
+				73EF730525A8563C0019B7C5 /* HYContentView.swift */,
+				73EF730625A8563C0019B7C5 /* HYPageCollectionViewLayout.swift */,
+			);
+			path = HYPageView;
+			sourceTree = "<group>";
+		};
+		73EF731225A85A100019B7C5 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				73EF731425A85A100019B7C5 /* ChatToolsView.swift */,
+				73EF731725A85A100019B7C5 /* ChatToolsView.xib */,
+				73EF732925A8B9090019B7C5 /* EmoticonView.swift */,
+			);
+			path = ChatView;
 			sourceTree = "<group>";
 		};
 		89B078FDC9A36822D6B5F93E /* Frameworks */ = {
@@ -566,6 +609,7 @@
 				73F606FD25A5B5140097741A /* RoomViewController.xib in Resources */,
 				7322E8102594743D000DDB82 /* CollectionGameCell.xib in Resources */,
 				73DC0AA52596F58700EA627E /* AmuseMenuView.xib in Resources */,
+				73EF731C25A85A100019B7C5 /* ChatToolsView.xib in Resources */,
 				73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */,
 				73DC136125938C7A0028692B /* CollectionCycleCell.xib in Resources */,
 				73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */,
@@ -625,20 +669,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				73531C52258CA236007BCD8F /* CollectionHeaderView.swift in Sources */,
+				73EF731925A85A100019B7C5 /* ChatToolsView.swift in Sources */,
 				7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */,
 				73316A832596313B003C5321 /* AmuseViewModel.swift in Sources */,
 				73531C4E258C5CFA007BCD8F /* RecommendViewController.swift in Sources */,
+				73EF732A25A8B9090019B7C5 /* EmoticonView.swift in Sources */,
 				73316A7625957974003C5321 /* GameViewModel.swift in Sources */,
 				73F35A3D259844160016B5D9 /* BaseViewController.swift in Sources */,
+				73EF730A25A8563C0019B7C5 /* HYPageCollectionView.swift in Sources */,
 				7309FD5D258F0867000C1A2F /* FollowViewController.swift in Sources */,
 				73EDE4B025945E4C00F12893 /* RecommendGameView.swift in Sources */,
 				7309FD64258F0DD4000C1A2F /* NetWorkTool.swift in Sources */,
 				7309FD60258F08B2000C1A2F /* GameViewController.swift in Sources */,
 				73DC135C259387E00028692B /* CycleModel.swift in Sources */,
 				73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */,
+				73EF730725A8563C0019B7C5 /* HYTitleView.swift in Sources */,
 				73531C57258CA75E007BCD8F /* CollectionNormalCell.swift in Sources */,
 				73DC0AA22596F56A00EA627E /* AmuseMenuView.swift in Sources */,
 				73DC0A9F2596D4D900EA627E /* BaseAnchorViewController.swift in Sources */,
+				73EF730B25A8563C0019B7C5 /* HYContentView.swift in Sources */,
 				73F606FE25A5B5140097741A /* RoomViewController.swift in Sources */,
 				73316A7925958223003C5321 /* GameModel.swift in Sources */,
 				73E6D90725906A65000E9856 /* NSDate+Extension.swift in Sources */,
@@ -655,6 +704,7 @@
 				7322E80F2594743D000DDB82 /* CollectionGameCell.swift in Sources */,
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
 				73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */,
+				73EF730925A8563C0019B7C5 /* HYPageView.swift in Sources */,
 				73DC1356259370460028692B /* RecommendCycleView.swift in Sources */,
 				73C892AC2598B18E000A334E /* RoomNormalViewController.swift in Sources */,
 				73E6D9002590558D000E9856 /* RecommendViewModel.swift in Sources */,
@@ -664,7 +714,9 @@
 				73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
 				73C892AF2598B51E000A334E /* CustomNavigationController.swift in Sources */,
+				73EF730C25A8563C0019B7C5 /* HYPageCollectionViewLayout.swift in Sources */,
 				73DC0AB025971BCC00EA627E /* FunnyViewModel.swift in Sources */,
+				73EF730825A8563C0019B7C5 /* HYTitleStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,7 +899,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -868,7 +920,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
