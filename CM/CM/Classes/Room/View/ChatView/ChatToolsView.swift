@@ -17,7 +17,7 @@ class ChatToolsView: UIView, NibLoadable {
     weak var delegate : ChatToolsViewDelegate?
     
     fileprivate lazy var emoticonBtn : UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
-    fileprivate lazy var emoticonView : EmoticonView = EmoticonView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 250))
+    fileprivate lazy var emoticonView : EmoticonView = EmoticonView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 300))
     
     @IBOutlet weak var inputTextField: UITextField!
     

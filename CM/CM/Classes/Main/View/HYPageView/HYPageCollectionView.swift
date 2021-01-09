@@ -63,7 +63,7 @@ extension HYPageCollectionView {
         pageControl.numberOfPages = 4
         pageControl.isEnabled = false
         addSubview(pageControl)
-        pageControl.backgroundColor = UIColor.randomColor()
+       // pageControl.backgroundColor = UIColor.randomColor()
         
         // 3.创建UICollectionView
         let collectionViewY = isTitleInTop ? style.titleHeight : 0
@@ -74,7 +74,10 @@ extension HYPageCollectionView {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         addSubview(collectionView)
-        collectionView.backgroundColor = UIColor.randomColor()
+       // collectionView.backgroundColor = UIColor.randomColor()
+        
+        collectionView.backgroundColor = UIColor.darkGray
+        pageControl.backgroundColor = collectionView.backgroundColor
     }
 }
 

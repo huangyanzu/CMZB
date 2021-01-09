@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		73034BCE2591DC7C00434797 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73034BCD2591DC7C00434797 /* AnchorModel.swift */; };
+		730510A125A95CAF003CD7BF /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7305109E25A95CAF003CD7BF /* types.plist */; };
+		730510A225A95CAF003CD7BF /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7305109F25A95CAF003CD7BF /* QHSohuGifSort.plist */; };
+		730510A325A95CAF003CD7BF /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 730510A025A95CAF003CD7BF /* QHNormalEmotionSort.plist */; };
+		730510A725A961C7003CD7BF /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510A525A961C7003CD7BF /* Emoticon.swift */; };
+		730510A825A961C7003CD7BF /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510A625A961C7003CD7BF /* EmoticonPackage.swift */; };
+		730510AB25A9620D003CD7BF /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */; };
+		730510AF25A9637B003CD7BF /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510AD25A9637A003CD7BF /* EmoticonViewCell.swift */; };
+		730510B025A9637B003CD7BF /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730510AE25A9637B003CD7BF /* EmoticonViewCell.xib */; };
 		7309FD5D258F0867000C1A2F /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD5C258F0867000C1A2F /* FollowViewController.swift */; };
 		7309FD60258F08B2000C1A2F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD5F258F08B2000C1A2F /* GameViewController.swift */; };
 		7309FD64258F0DD4000C1A2F /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD63258F0DD4000C1A2F /* NetWorkTool.swift */; };
@@ -79,6 +87,14 @@
 
 /* Begin PBXFileReference section */
 		73034BCD2591DC7C00434797 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		7305109E25A95CAF003CD7BF /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		7305109F25A95CAF003CD7BF /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		730510A025A95CAF003CD7BF /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		730510A525A961C7003CD7BF /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		730510A625A961C7003CD7BF /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		730510AD25A9637A003CD7BF /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		730510AE25A9637B003CD7BF /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
 		7309FD5C258F0867000C1A2F /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		7309FD5F258F08B2000C1A2F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		7309FD63258F0DD4000C1A2F /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
@@ -173,6 +189,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7305109D25A95CAF003CD7BF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7305109E25A95CAF003CD7BF /* types.plist */,
+				7305109F25A95CAF003CD7BF /* QHSohuGifSort.plist */,
+				730510A025A95CAF003CD7BF /* QHNormalEmotionSort.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		7309FD62258F0DB1000C1A2F /* NetWorkTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +228,7 @@
 		73489C342585EBCA006521E0 /* CM */ = {
 			isa = PBXGroup;
 			children = (
+				7305109D25A95CAF003CD7BF /* Resource */,
 				73489C4C2585ED76006521E0 /* Classes */,
 				73489C352585EBCA006521E0 /* AppDelegate.swift */,
 				73489C3E2585EBCB006521E0 /* Assets.xcassets */,
@@ -403,6 +430,8 @@
 		73489C5F2585ED76006521E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				730510A525A961C7003CD7BF /* Emoticon.swift */,
+				730510A625A961C7003CD7BF /* EmoticonPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,6 +491,7 @@
 			isa = PBXGroup;
 			children = (
 				73DC0A9A2596D20800EA627E /* BaseViewModel.swift */,
+				730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -526,6 +556,8 @@
 				73EF731425A85A100019B7C5 /* ChatToolsView.swift */,
 				73EF731725A85A100019B7C5 /* ChatToolsView.xib */,
 				73EF732925A8B9090019B7C5 /* EmoticonView.swift */,
+				730510AD25A9637A003CD7BF /* EmoticonViewCell.swift */,
+				730510AE25A9637B003CD7BF /* EmoticonViewCell.xib */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -601,13 +633,16 @@
 				73489C672585EEF5006521E0 /* Main.storyboard in Resources */,
 				73DC0AAA2597012300EA627E /* AmuseMenuViewCell.xib in Resources */,
 				73531C53258CA236007BCD8F /* CollectionHeaderView.xib in Resources */,
+				730510A125A95CAF003CD7BF /* types.plist in Resources */,
 				73531C58258CA75E007BCD8F /* CollectionNormalCell.xib in Resources */,
+				730510A325A95CAF003CD7BF /* QHNormalEmotionSort.plist in Resources */,
 				73489C422585EBCB006521E0 /* LaunchScreen.storyboard in Resources */,
 				73489C3F2585EBCB006521E0 /* Assets.xcassets in Resources */,
 				73489C6F2585F388006521E0 /* Live.storyboard in Resources */,
 				73489C6B2585F35F006521E0 /* Home.storyboard in Resources */,
 				73F606FD25A5B5140097741A /* RoomViewController.xib in Resources */,
 				7322E8102594743D000DDB82 /* CollectionGameCell.xib in Resources */,
+				730510B025A9637B003CD7BF /* EmoticonViewCell.xib in Resources */,
 				73DC0AA52596F58700EA627E /* AmuseMenuView.xib in Resources */,
 				73EF731C25A85A100019B7C5 /* ChatToolsView.xib in Resources */,
 				73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */,
@@ -616,6 +651,7 @@
 				73489C772585F3CA006521E0 /* Profile.storyboard in Resources */,
 				73EDE4B325945E5D00F12893 /* RecommendGameView.xib in Resources */,
 				73489C732585F3A8006521E0 /* Follow.storyboard in Resources */,
+				730510A225A95CAF003CD7BF /* QHSohuGifSort.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +728,8 @@
 				73316A7925958223003C5321 /* GameModel.swift in Sources */,
 				73E6D90725906A65000E9856 /* NSDate+Extension.swift in Sources */,
 				73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */,
+				730510AF25A9637B003CD7BF /* EmoticonViewCell.swift in Sources */,
+				730510AB25A9620D003CD7BF /* EmoticonViewModel.swift in Sources */,
 				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
 				73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
@@ -699,6 +737,8 @@
 				73DC0AAD259718B900EA627E /* FunnyViewController.swift in Sources */,
 				73DC1353259340380028692B /* CollectionBaseCell.swift in Sources */,
 				73E8AC8E25886D00001728AD /* PageComtentView.swift in Sources */,
+				730510A725A961C7003CD7BF /* Emoticon.swift in Sources */,
+				730510A825A961C7003CD7BF /* EmoticonPackage.swift in Sources */,
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
 				73DEC2BE25A6F6D500B48647 /* Emitterable.swift in Sources */,
 				7322E80F2594743D000DDB82 /* CollectionGameCell.swift in Sources */,

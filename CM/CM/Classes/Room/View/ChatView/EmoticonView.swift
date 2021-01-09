@@ -42,11 +42,11 @@ extension EmoticonView{
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10 )
         
         
-        let pageCollectionView = HYPageCollectionView(frame: bounds, titles: ["普通","粉丝专属"], style: style, isTitleInTop: false, layout: layout)
+        let pageCollectionView = HYPageCollectionView(frame: bounds, titles: ["普通","粉丝专属"], style: style, isTitleInTop: true, layout: layout)
         
         
         pageCollectionView.dataSource = self
-        pageCollectionView.register(cell: UICollectionViewCell.self, identifier: kEmoticonCellID)
+        pageCollectionView.register(nib: UINib(nibName: "EmoticonViewCell", bundle: nil), identifier: kEmoticonCellID)
         
         
         addSubview(pageCollectionView)
@@ -57,25 +57,21 @@ extension EmoticonView{
 extension EmoticonView : HYPageCollectionViewDataSource{
     
     func numberOfSections(in pageCollectionView: HYPageCollectionView) -> Int {
-        return 2
+        return EmoticonViewModel.shareInstance.packages.count
     }
     
     func pageCollectionView(_ collectionView: HYPageCollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if section == 0 {
-            return 30
-        }else{
-            return 10
-        }
+        return EmoticonViewModel.shareInstance.packages[section].emoticons.count
         
     }
     
     func pageCollectionView(_ pageCollectionView: HYPageCollectionView, _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kEmoticonCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kEmoticonCellID, for: indexPath) as! EmoticonViewCell
         
-        cell.backgroundColor = UIColor.randomColor()
         
+        cell.emoticon = EmoticonViewModel.shareInstance.packages[indexPath.section].emoticons[indexPath.item]
         
         return cell
         
