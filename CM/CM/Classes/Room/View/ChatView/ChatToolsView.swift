@@ -51,13 +51,13 @@ extension ChatToolsView {
     fileprivate func setupUI() {
         
         // 0.测试: 让textFiled显示`富文本`
-        /*
-        let attrString = NSAttributedString(string: "I am fine", attributes: [NSForegroundColorAttributeName : UIColor.green])
+     
+       /*let attrString = NSAttributedString(string: "I am fine", attributes: [NSForegroundColorAttributeName : UIColor.green])
         let attachment = NSTextAttachment()
         attachment.image = UIImage(named: "[大哭]")
         let attrStr = NSAttributedString(attachment: attachment)
         inputTextField.attributedText = attrStr
-        */
+         */ 
         
         
         // 1.初始化inputView中rightView
@@ -72,17 +72,17 @@ extension ChatToolsView {
         
         // 2.设置emotionView的闭包(weak当对象销毁值, 会自动将指针指向nil)
         // weak var weakSelf = self
-//        emoticonView.emoticonClickCallback = {[weak self] emoticon in
-//            // 1.判断是否是删除按钮
-//            if emoticon.emoticonName == "delete-n" {
-//                self?.inputTextField.deleteBackward()
-//                return
-//            }
+        emoticonView.emoticonClickCallback = {[weak self] emoticon in
+            // 1.判断是否是删除按钮
+            if emoticon.emoticonName == "delete-n" {
+                self?.inputTextField.deleteBackward()
+                return
+            }
             
-//            // 2.获取光标位置
-//            guard let range = self?.inputTextField.selectedTextRange else { return }
-//            self?.inputTextField.replace(range, withText: emoticon.emoticonName)
- //       }
+            // 2.获取光标位置
+            guard let range = self?.inputTextField.selectedTextRange else { return }
+            self?.inputTextField.replace(range, withText: emoticon.emoticonName)
+        }
     }
 }
 

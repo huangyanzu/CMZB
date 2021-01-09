@@ -16,6 +16,11 @@
 		730510AB25A9620D003CD7BF /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */; };
 		730510AF25A9637B003CD7BF /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510AD25A9637A003CD7BF /* EmoticonViewCell.swift */; };
 		730510B025A9637B003CD7BF /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730510AE25A9637B003CD7BF /* EmoticonViewCell.xib */; };
+		730510B725A9A5D2003CD7BF /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510B325A9A5D2003CD7BF /* GiftListView.swift */; };
+		730510B825A9A5D2003CD7BF /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730510B425A9A5D2003CD7BF /* GiftViewCell.xib */; };
+		730510B925A9A5D2003CD7BF /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730510B525A9A5D2003CD7BF /* GiftListView.xib */; };
+		730510BA25A9A5D2003CD7BF /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510B625A9A5D2003CD7BF /* GiftViewCell.swift */; };
+		730510CA25A9B3C4003CD7BF /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730510C925A9B3C4003CD7BF /* GiftViewModel.swift */; };
 		7309FD5D258F0867000C1A2F /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD5C258F0867000C1A2F /* FollowViewController.swift */; };
 		7309FD60258F08B2000C1A2F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD5F258F08B2000C1A2F /* GameViewController.swift */; };
 		7309FD64258F0DD4000C1A2F /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309FD63258F0DD4000C1A2F /* NetWorkTool.swift */; };
@@ -62,6 +67,9 @@
 		73DEC2BE25A6F6D500B48647 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEC2BD25A6F6D500B48647 /* Emitterable.swift */; };
 		73DEC2EE25A7023F00B48647 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DEC2ED25A7023F00B48647 /* NibLoadable.swift */; };
 		73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */; };
+		73E3E1C025AA04C9005BC56A /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3E1BE25AA04C9005BC56A /* GiftModel.swift */; };
+		73E3E1C125AA04C9005BC56A /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3E1BF25AA04C9005BC56A /* GiftPackage.swift */; };
+		73E3E1C425AA04DC005BC56A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3E1C325AA04DB005BC56A /* BaseModel.swift */; };
 		73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E32587A757006A2E8C /* HomeViewController.swift */; };
 		73E632E82587A7D4006A2E8C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632E72587A7D4006A2E8C /* PageTitleView.swift */; };
 		73E632EB2587AA84006A2E8C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E632EA2587AA84006A2E8C /* Common.swift */; };
@@ -95,6 +103,11 @@
 		730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		730510AD25A9637A003CD7BF /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
 		730510AE25A9637B003CD7BF /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
+		730510B325A9A5D2003CD7BF /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		730510B425A9A5D2003CD7BF /* GiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		730510B525A9A5D2003CD7BF /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		730510B625A9A5D2003CD7BF /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		730510C925A9B3C4003CD7BF /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		7309FD5C258F0867000C1A2F /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		7309FD5F258F08B2000C1A2F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		7309FD63258F0DD4000C1A2F /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
@@ -143,6 +156,9 @@
 		73DEC2BD25A6F6D500B48647 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		73DEC2ED25A7023F00B48647 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		73E05C352586B15A005D869C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		73E3E1BE25AA04C9005BC56A /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		73E3E1BF25AA04C9005BC56A /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		73E3E1C325AA04DB005BC56A /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		73E632E32587A757006A2E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73E632E72587A7D4006A2E8C /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		73E632EA2587AA84006A2E8C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -197,6 +213,17 @@
 				730510A025A95CAF003CD7BF /* QHNormalEmotionSort.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		730510B225A9A59C003CD7BF /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				730510B325A9A5D2003CD7BF /* GiftListView.swift */,
+				730510B525A9A5D2003CD7BF /* GiftListView.xib */,
+				730510B625A9A5D2003CD7BF /* GiftViewCell.swift */,
+				730510B425A9A5D2003CD7BF /* GiftViewCell.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 		7309FD62258F0DB1000C1A2F /* NetWorkTools */ = {
@@ -430,6 +457,9 @@
 		73489C5F2585ED76006521E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73E3E1C325AA04DB005BC56A /* BaseModel.swift */,
+				73E3E1BE25AA04C9005BC56A /* GiftModel.swift */,
+				73E3E1BF25AA04C9005BC56A /* GiftPackage.swift */,
 				730510A525A961C7003CD7BF /* Emoticon.swift */,
 				730510A625A961C7003CD7BF /* EmoticonPackage.swift */,
 			);
@@ -482,6 +512,7 @@
 		73C892A72598B130000A334E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				730510B225A9A59C003CD7BF /* GiftView */,
 				73EF731225A85A100019B7C5 /* ChatView */,
 			);
 			path = View;
@@ -490,6 +521,7 @@
 		73DC0A992596D1E800EA627E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				730510C925A9B3C4003CD7BF /* GiftViewModel.swift */,
 				73DC0A9A2596D20800EA627E /* BaseViewModel.swift */,
 				730510AA25A9620D003CD7BF /* EmoticonViewModel.swift */,
 			);
@@ -648,7 +680,9 @@
 				73DC13592593706E0028692B /* RecommendCycleView.xib in Resources */,
 				73DC136125938C7A0028692B /* CollectionCycleCell.xib in Resources */,
 				73531C5D258CAC91007BCD8F /* CollectionPrettyCell.xib in Resources */,
+				730510B925A9A5D2003CD7BF /* GiftListView.xib in Resources */,
 				73489C772585F3CA006521E0 /* Profile.storyboard in Resources */,
+				730510B825A9A5D2003CD7BF /* GiftViewCell.xib in Resources */,
 				73EDE4B325945E5D00F12893 /* RecommendGameView.xib in Resources */,
 				73489C732585F3A8006521E0 /* Follow.storyboard in Resources */,
 				730510A225A95CAF003CD7BF /* QHSohuGifSort.plist in Resources */,
@@ -704,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E3E1C425AA04DC005BC56A /* BaseModel.swift in Sources */,
 				73531C52258CA236007BCD8F /* CollectionHeaderView.swift in Sources */,
 				73EF731925A85A100019B7C5 /* ChatToolsView.swift in Sources */,
 				7373E02E258A093800B31942 /* UIColor+Extension.swift in Sources */,
@@ -722,14 +757,17 @@
 				73EF730725A8563C0019B7C5 /* HYTitleView.swift in Sources */,
 				73531C57258CA75E007BCD8F /* CollectionNormalCell.swift in Sources */,
 				73DC0AA22596F56A00EA627E /* AmuseMenuView.swift in Sources */,
+				73E3E1C025AA04C9005BC56A /* GiftModel.swift in Sources */,
 				73DC0A9F2596D4D900EA627E /* BaseAnchorViewController.swift in Sources */,
 				73EF730B25A8563C0019B7C5 /* HYContentView.swift in Sources */,
 				73F606FE25A5B5140097741A /* RoomViewController.swift in Sources */,
 				73316A7925958223003C5321 /* GameModel.swift in Sources */,
+				730510B725A9A5D2003CD7BF /* GiftListView.swift in Sources */,
 				73E6D90725906A65000E9856 /* NSDate+Extension.swift in Sources */,
 				73AFA231259192A9000FA39D /* AnchorGroup.swift in Sources */,
 				730510AF25A9637B003CD7BF /* EmoticonViewCell.swift in Sources */,
 				730510AB25A9620D003CD7BF /* EmoticonViewModel.swift in Sources */,
+				73E3E1C125AA04C9005BC56A /* GiftPackage.swift in Sources */,
 				73531C5C258CAC91007BCD8F /* CollectionPrettyCell.swift in Sources */,
 				73316A8025961AC4003C5321 /* AmuseViewController.swift in Sources */,
 				73489C362585EBCA006521E0 /* AppDelegate.swift in Sources */,
@@ -742,6 +780,7 @@
 				73E05C362586B15A005D869C /* UIBarButtonItem+Extension.swift in Sources */,
 				73DEC2BE25A6F6D500B48647 /* Emitterable.swift in Sources */,
 				7322E80F2594743D000DDB82 /* CollectionGameCell.swift in Sources */,
+				730510BA25A9A5D2003CD7BF /* GiftViewCell.swift in Sources */,
 				73E632EB2587AA84006A2E8C /* Common.swift in Sources */,
 				73DC0A9B2596D20800EA627E /* BaseViewModel.swift in Sources */,
 				73EF730925A8563C0019B7C5 /* HYPageView.swift in Sources */,
@@ -751,6 +790,7 @@
 				73034BCE2591DC7C00434797 /* AnchorModel.swift in Sources */,
 				73DC0AA92597012300EA627E /* AmuseMenuViewCell.swift in Sources */,
 				73C892A92598B15D000A334E /* RoomShowViewController.swift in Sources */,
+				730510CA25A9B3C4003CD7BF /* GiftViewModel.swift in Sources */,
 				73DC136025938C7A0028692B /* CollectionCycleCell.swift in Sources */,
 				73E632E42587A757006A2E8C /* HomeViewController.swift in Sources */,
 				73C892AF2598B51E000A334E /* CustomNavigationController.swift in Sources */,

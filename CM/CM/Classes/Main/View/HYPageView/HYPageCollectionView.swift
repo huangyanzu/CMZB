@@ -14,9 +14,18 @@ protocol HYPageCollectionViewDataSource : class {
     func pageCollectionView(_ pageCollectionView : HYPageCollectionView ,_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
 }
 
+protocol HYPageCollectionViewDelegate : class  {
+    
+    
+    func pageCollectionView(_ pageCollectionView: HYPageCollectionView , didSelectItemAt indexPath: IndexPath)
+}
+
+
+
 class HYPageCollectionView: UIView {
     
     weak var dataSource : HYPageCollectionViewDataSource?
+    weak var delegate : HYPageCollectionViewDelegate?
     
     fileprivate var titles : [String]
     fileprivate var isTitleInTop : Bool
@@ -91,6 +100,10 @@ extension HYPageCollectionView {
     func register(nib : UINib, identifier : String) {
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
+    
+    func reloadData()  {
+        collectionView.reloadData()
+    }
 }
 
 
@@ -118,6 +131,14 @@ extension HYPageCollectionView : UICollectionViewDataSource {
 
 // MARK:- UICollectionViewDelegate
 extension HYPageCollectionView : UICollectionViewDelegate {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        delegate?.pageCollectionView(self, didSelectItemAt: indexPath)
+    }
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollViewEndScroll()
     }

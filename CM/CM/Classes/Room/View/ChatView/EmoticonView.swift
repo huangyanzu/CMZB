@@ -10,7 +10,11 @@ import UIKit
 private let kEmoticonCellID = "kEmoticonCellID"
 
 
+
+
 class EmoticonView: UIView {
+    
+    var emoticonClickCallback:((Emoticon)->())?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,6 +50,8 @@ extension EmoticonView{
         
         
         pageCollectionView.dataSource = self
+        pageCollectionView.delegate = self
+        
         pageCollectionView.register(nib: UINib(nibName: "EmoticonViewCell", bundle: nil), identifier: kEmoticonCellID)
         
         
@@ -53,6 +59,23 @@ extension EmoticonView{
     }
     
 }
+
+extension EmoticonView : HYPageCollectionViewDelegate{
+    
+    func pageCollectionView(_ pageCollectionView: HYPageCollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let emoticon = EmoticonViewModel.shareInstance.packages[indexPath.section].emoticons[indexPath.item]
+        
+        if let emoticonClickCallback = emoticonClickCallback{
+            emoticonClickCallback(emoticon)
+        }
+        
+        
+    }
+    
+}
+
+
 
 extension EmoticonView : HYPageCollectionViewDataSource{
     
